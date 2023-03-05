@@ -2,7 +2,7 @@ const canvas = document.querySelector("canvas");
 const secondsCount = document.querySelector(".seconds");
 const level = document.querySelector(".grade");
 const context = canvas.getContext("2d");
-const DimensioniDoggo = { width: 353, height: 325};
+const DimensioniDoggo = { width: 250, height: 325};
 
 
 const levels = {
@@ -10,18 +10,18 @@ const levels = {
   10: "Adoratore Base",
   15: "Adoratore Intermedio",
   35: "Adoratore Avanzato",
-  65: "Fedele Junior",
-  105: "Fedele",
-  150: "Fedele Senior",
+  65: "Fedele Base",
+  105: "Fedele Intermedio",
+  150: "Fedele Avanzato",
   250: "Sacerdote",
   450: "Saggio",
   650: "Eremita",
-  1000: "Eremita Senior",
-  1500: "CEO",
-  2500: "Papa",
-  3500: "Valvassino",
-  4500: "Valvassore",
-  10500: "Vassallo",
+  1000: "Sommo",
+  1500: "Amministratore delegato",
+  2500: "CEO",
+  3500: "Vescovo",
+  4500: "Arcivescovo",
+  10500: "Papa",
   20500: "Sovrano",
   30500: "THE MASTER"
 }
@@ -39,7 +39,7 @@ const loopingPugs = 40; // 125 pugs required to cover a full 4K television scree
 const offsetDistance = 100;
 let currentOffset = 0;
 
-const movementRange = 300
+const movementRange = 400
 
 const mouseOffset = {
   x: 0,
