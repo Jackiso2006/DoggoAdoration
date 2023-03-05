@@ -12,13 +12,16 @@ html {
     left: 50%;
     transform: translateX(-50%);
     font-family: monospace;
-    width: 250px;
+    width: 300px;
     text-align: center;
 }
 
 .inner {
     background: rgba(255, 255, 255, 0.7);
     padding: 20px;
+    font-family: coolvetica;
+    font-size: 15px;
+
 }
 
 .frame {
@@ -29,6 +32,7 @@ html {
 
 .timer span {
     font-weight: bold;
+    font-size: 20px;
 }
 
 canvas {
@@ -43,4 +47,9 @@ canvas {
     .timer {
         width: 500px;
     }
+}
+
+@font-face {
+    font-family: coolvetica;
+    src: url(./coolvetica\ rg.otf);
 }
