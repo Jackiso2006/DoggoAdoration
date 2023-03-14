@@ -9,21 +9,21 @@ const levels = {
   5: "Assistente",
   10: "Adoratore Base",
   15: "Adoratore Intermedio",
-  35: "Adoratore Avanzato",
-  65: "Fedele Base",
-  105: "Fedele Intermedio",
+  30: "Adoratore Avanzato",
+  60: "Fedele Base",
+  100: "Fedele Intermedio",
   150: "Fedele Avanzato",
   250: "Sacerdote",
-  450: "Saggio",
-  650: "Eremita",
+  500: "Saggio",
+  750: "Eremita",
   1000: "Sommo",
   1500: "Amministratore delegato",
   2500: "CEO",
   3500: "Vescovo",
-  4500: "Arcivescovo",
-  10500: "Papa",
-  20500: "Sovrano",
-  30500: "THE MASTER"
+  5000: "Arcivescovo",
+  10000: "Papa",
+  20000: "Sovrano",
+  30000: "THE MASTER"
 }
 
 const startTime = Date.now();
@@ -108,6 +108,11 @@ function loopDraw() {
   if(levels[newTime]) {
     level.innerText = levels[newTime]
   }
+
+  if(newTime > 30100){
+    image.src = "./sanLollo.jpg";
+  }
+
 
   requestAnimationFrame(loopDraw);
 }
